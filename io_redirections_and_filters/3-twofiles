@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Users: $(wc -l < /etc/passwd) Hosts: $(wc -l < /etc/hosts)"
+cat /etc/passwd /etc/hosts
