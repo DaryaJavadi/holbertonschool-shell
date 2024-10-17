@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -print -o -type f -empty -print | sed 's|^\./||'
+find . -type f -size 0 -o -type d -empty -print0 | xargs -0 -n1 -I {} sh -c
