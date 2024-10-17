@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -size 0 -o -type d -empty -print0 | xargs -0 -n1 -I {} sh -c
+ls -R . -1 -1a 
