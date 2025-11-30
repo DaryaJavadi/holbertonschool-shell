@@ -6,7 +6,7 @@ while [ i -le 10 ]; do
 		echo "bad luck"
 	elif [ i -eq 8 ]; then
 		echo "good luck"
-	else;
+	else
 		echo "Best School"
 	fi
 	i++
