@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 #awk
-awk '{match($0, /([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+).*" [0-9]{3} /, arr); 
-      ip=arr[1]; 
-      split($0,a," "); 
-      code=a[9]; 
-      if(ip && code) print ip, code}' apache-access.log
+awk '{print $1" "$9}' apache-access.log
