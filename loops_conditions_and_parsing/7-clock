@@ -8,5 +8,6 @@ while [ "$i" -le 12 ]; do
 	echo "$n"
 	n=$((n+1))
 	done
+	n=1
 i=$((i+1))
 done
