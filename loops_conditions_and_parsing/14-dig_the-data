@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# awk
+awk '{pair=$1" "$9; count[pair]++} 
+     END {for (i in count) print count[i], i}' apache-access.log | sort -rn
